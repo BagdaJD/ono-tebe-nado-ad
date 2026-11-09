@@ -1,1 +1,90 @@
 /* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px 50px;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__logo img {
+  width: 148px;
+  height: 105px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 30px;
+  list-style: circle;
+  padding-left: 0px;
+}
+
+.header__links-list-item:first-child {
+  list-style-type: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__address {
+  justify-self: end;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 240px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.cover {
+  min-height: 757px;
+  background-image: url('../images/lotus-flower.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.lots {
+  padding-top: 180px;
+}
+
+.card_type_film {
+  background-image: url('../images/card-lot-01.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_book {
+  background-image: url('../images/card-lot-02.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_picture {
+  background-image: url('../images/card-lot-03.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  padding-top: 120px;
+}
+
+.footer {
+  padding-top: 180px;
+}
+
+.footer__social-link img {
+  width: 48px;
+  height: 48px;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
