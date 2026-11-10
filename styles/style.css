@@ -22,7 +22,7 @@
   padding-left: 0px;
 }
 
-.header__links-list-item:first-child {
+.header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
@@ -42,15 +42,152 @@
   font-size: 18px;
 }
 
+.header__address a {
+  color: black;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
 .cover {
+  position: relative;
   min-height: 757px;
   background-image: url('../images/lotus-flower.jpg');
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.cover__title {
+  margin: 0;
+  width: 100%;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  color: white;
+  text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+  line-height: 0.9;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.cover__description {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.cover__description-text {
+  color: white;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 22px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.bet-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  font-family: Raleway;
+  padding: 12px 32px 11px 31px;
 }
 
 .lots {
-  padding-top: 180px;
+  padding: 180px 24px 0;
+}
+
+.lots__heading {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-left: 40px;
+  padding-bottom: 27px;
+}
+
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+}
+
+.card__title,
+.card__text {
+  color: white;
+  position: relative;
+  z-index: 2;
+  line-height: 120%;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card__title {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.card__text {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .card_type_film {
@@ -71,8 +208,49 @@
   background-position: center;
 }
 
+.lots__look-more-link {
+  display: block;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  margin-top: 30px;
+  padding-left: 40px;
+}
+
 .about {
-  padding-top: 120px;
+  display: grid;
+  grid-template-column: 334px 1fr;
+  gap: 72px;
+  padding-top: 120px 24px 0;
+}
+
+.about__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+  radius: 1px;
+}
+
+.about__title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text p {
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.about__text {
 }
 
 .footer {
